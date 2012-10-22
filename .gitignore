@@ -1,0 +1,8 @@
+.wrproject
+.project
+.cproject
+.wrmakefile
+*.o
+*.a
+*.lai
+*~
