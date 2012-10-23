@@ -3,11 +3,14 @@
 
 #include "WPILib.h"
 
-class OI {
+class OI
+{
 private:
-
+  Joystick* left, right;
 public:
-	OI();
+  OI();
+  float getLeftDrive();
+  float getRightDrive();
 };
 
 #endif

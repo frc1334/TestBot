@@ -1,5 +1,7 @@
 #include "OI.h"
 
-OI::OI() {
-	// Process operator interface input here.
+OI::OI()
+{
+  left = new Joystick(RobotMap::LEFT_JOYSTICK);
+  right = new Joystick(RobotMap::RIGHT_JOYSTICK);
 }
