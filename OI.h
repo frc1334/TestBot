@@ -9,8 +9,18 @@ private:
   Joystick* left, right;
 public:
   OI();
-  float getLeftDrive();
-  float getRightDrive();
+  inline float getLeftDrive();
+  inline float getRightDrive();
 };
+
+inline float OI::getLeftDrive()
+{
+  return left->GetY();
+}
+
+inline float OI::getRightDrive()
+{
+  return right->GetY();
+}
 
 #endif
