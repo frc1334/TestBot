@@ -6,7 +6,7 @@
 class OI
 {
 private:
-  Joystick* left, right;
+  Joystick left, right;
 public:
   OI();
   inline float getLeftDrive();

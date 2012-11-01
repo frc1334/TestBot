@@ -2,7 +2,7 @@
 
 TankDriveCommand::TankDriveCommand()
 {
-  requires(driveTrainSubsystem);
+  Requires(driveTrainSubsystem);
 }
 
 // Called just before this Command runs the first time
@@ -13,7 +13,7 @@ void TankDriveCommand::Initialize()
 // Called repeatedly when this Command is scheduled to run
 void TankDriveCommand::Execute()
 {
-  driveTrainSubsystem(oi->getRightDrive(), oi->getLeftDrive() * -1);
+  driveTrainSubsystem->Drive(oi->getRightDrive(), oi->getLeftDrive() * -1);
 }
 
 // Make this return true when this Command no longer needs to run execute()

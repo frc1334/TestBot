@@ -1,17 +1,17 @@
 #include "OI.h"
+#include "Robotmap.h"
 
-OI::OI()
+OI::OI() :
+	left(LEFT_JOYSTICK), right(RIGHT_JOYSTICK)
 {
-  left = new Joystick(RobotMap::LEFT_JOYSTICK);
-  right = new Joystick(RobotMap::RIGHT_JOYSTICK);
 }
 
 inline float OI::getLeftDrive()
 {
-  return left->GetY();
+  return left.GetY();
 }
 
 inline float OI::getRightDrive()
 {
-  return right->GetY();
+  return right.GetY();
 }
