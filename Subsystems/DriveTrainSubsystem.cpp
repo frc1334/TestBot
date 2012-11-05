@@ -14,7 +14,7 @@ void DriveTrainSubsystem::InitDefaultCommand()
 
 // this method will be used by DriveTrainCommand to actually drive
 // the drive train jaguars
-void Drive(float right, float left)
+void DriveTrainSubsystem::Drive(float right, float left)
 {
 	rightMotor.Set(right);
 	leftMotor.Set(left);
