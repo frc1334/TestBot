@@ -7,6 +7,8 @@ class OI {
 private:
 
 public:
+  inline float getLeftDrive();
+  inline float getRightDrive();
 	OI();
 };
 
