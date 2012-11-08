@@ -8,13 +8,16 @@
  *
  * @author ExampleAuthor
  */
-class ExampleSubsystem: public Subsystem {
+class DriveTrainSubsystem: public Subsystem {
 private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
+Jaguar left;
+Jaguar right;
 public:
-	ExampleSubsystem();
+    	ExampleSubsystem();
 	void InitDefaultCommand();
+    void Drive(float left,float right);
 };
 
 #endif
