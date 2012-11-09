@@ -1,13 +1,10 @@
-#ifndef EXAMPLE_COMMAND_H
-#define EXAMPLE_COMMAND_H
+#ifndef ROBOTSCOMMAND_H
+#define ROBOTSCOMMAND_H
 
 #include "../CommandBase.h"
 
-/**
- *
- *
- * @author ExampleAuthor
- */
+//@author Frank
+
 class ExampleCommand: public CommandBase {
 public:
 	ExampleCommand();
