@@ -4,7 +4,9 @@
 #include "WPILib.h"
 
 //@author Frank
-class ExampleSubsystem: public Subsystem {
+
+class ExampleSubsystem: public Subsystem
+{
 private:
 	Jaguar LeftMotor, RightMotor;
 public:
