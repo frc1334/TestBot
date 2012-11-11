@@ -8,9 +8,9 @@
  *
  * @author ExampleAuthor
  */
-class ExampleCommand: public CommandBase {
+class TankDriveCommand: public CommandBase {
 public:
-	ExampleCommand();
+	TankDriveCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
