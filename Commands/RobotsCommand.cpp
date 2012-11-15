@@ -4,7 +4,7 @@
 
 RobotsCommand::RobotsCommand() {
 
-	requires(RobotSubsystem);
+	Requires(robotSubsystem);
 }
 
 void RobotsCommand::Initialize() {
@@ -13,7 +13,7 @@ void RobotsCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void RobotsCommand::Execute() {
-    RobotSubsystem->Drive(oi->GetRightstick()  *   0.5, oi->GetLeftStick() * -0.5);
+    robotSubsystem->Drive(oi->GetRightStick()  *   0.5, oi->GetLeftStick() * -0.5);
 
 }
 

@@ -1,16 +1,17 @@
 #include "RobotSubsystem.h"
+#include "../Commands/RobotsCommand.h"
 #include "../Robotmap.h"
 
 //@author Frank
 
-RobotSubsystem::RobotSubsystem() : Subsystem("RobotSubsystem")
-{
+RobotSubsystem::RobotSubsystem() : Subsystem("RobotSubsystem"),
 	LeftMotor(LEFT_MOTOR), RightMotor(RIGHT_MOTOR)
+{
 }
 
 void RobotSubsystem::InitDefaultCommand()
 {
-	SetDefaultCommand(new DrivingCommand());
+	SetDefaultCommand(new RobotsCommand());
 }
 
 

@@ -10,8 +10,10 @@ private:
     Joystick LeftJoystick,RightJoystick ;
 public:
 	OI();
-	inline float GetRightStick();
-	inline float GetLeftStick();
+	inline float GetRightStick()
+	{ return RightJoystick.GetY(); }
+	inline float GetLeftStick()
+	{ return LeftJoystick.GetY(); }
 };
 
 #endif
