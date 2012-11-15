@@ -1,6 +1,6 @@
 #include "WPILib.h"
 #include "Commands/Command.h"
-#include "Commands/ExampleCommand.h"
+#include "Commands/TankDriveCommand.h"
 #include "CommandBase.h"
 
 class CommandBasedRobot : public IterativeRobot {
@@ -9,7 +9,7 @@ private:
 	
 	virtual void RobotInit() {
 		CommandBase::init();
-		autonomousCommand = new ExampleCommand();
+		autonomousCommand = new TankDriveCommand();
 	}
 	
 	virtual void AutonomousInit() {
