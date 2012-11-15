@@ -7,7 +7,7 @@
 
 class OI {
 private:
-    joystick LeftJoystick,RightJoystick ;
+    Joystick LeftJoystick,RightJoystick ;
 public:
 	OI();
 	inline float GetRightStick();

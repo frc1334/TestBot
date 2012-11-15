@@ -5,7 +5,7 @@
 
 //@author Frank
 
-class ExampleSubsystem: public Subsystem
+class RobotSubsystem: public Subsystem
 {
 private:
 	Jaguar LeftMotor, RightMotor;
