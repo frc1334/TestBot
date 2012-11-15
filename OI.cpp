@@ -12,3 +12,11 @@ OI::OI()
 	}
 	// Process operator interface input here.
 }
+    inline float OI::getLeftDrive()
+	{
+	    return Joystick.GetY();
+	}
+	inline float OT::getRightDrive()
+	{
+		return Joystick.GetX(); 
+	}
