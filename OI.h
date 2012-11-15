@@ -9,8 +9,10 @@ private:
   Joystick left, right;
 public:
   OI();
-  inline float getLeftDrive();
-  inline float getRightDrive();
+  inline float getLeftDrive()
+  { return left.GetY(); }
+  inline float getRightDrive()
+  { return right.GetY(); }
 };
 
 #endif
