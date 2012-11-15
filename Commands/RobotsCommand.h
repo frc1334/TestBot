@@ -5,9 +5,9 @@
 
 //@author Frank
 
-class ExampleCommand: public CommandBase {
+class ROBOTCommand: public CommandBase {
 public:
-	ExampleCommand();
+	ROBOTCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
