@@ -3,20 +3,26 @@
 #include "Commands/TankDriveCommand.h"
 #include "CommandBase.h"
 
-class CommandBasedRobot : public IterativeRobot {
+class CommandBasedRobot : public IterativeRobot
+{
 private:
 	Command *autonomousCommand;
 	
-	virtual void RobotInit() {
+	virtual void RobotInit()
+	{
+		//Create new Command for autonomous
 		CommandBase::init();
 		autonomousCommand = new TankDriveCommand();
 	}
 	
-	virtual void AutonomousInit() {
+	virtual void AutonomousInit()
+	{
+		//Start Autonomous
 		autonomousCommand->Start();
 	}
 	
-	virtual void AutonomousPeriodic() {
+	virtual void AutonomousPeriodic()
+	{
 		Scheduler::GetInstance()->Run();
 	}
 	
