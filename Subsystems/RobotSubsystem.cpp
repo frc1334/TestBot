@@ -15,8 +15,8 @@ void RobotSubsystem::InitDefaultCommand()
 }
 
 
-void RobotSubsystem::Drive (float RightJoystick, float LeftJoystick)
+void RobotSubsystem::Drive (float LeftJoystick)
 {
-    RightMotor.Set(RightJoystick);
+    RightMotor.Set(LeftJoystick);
     LeftMotor.Set(LeftJoystick);
 }

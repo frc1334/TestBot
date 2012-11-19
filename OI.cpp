@@ -4,6 +4,17 @@
 //@author Frank
 
 OI::OI():
-    LeftJoystick(LEFT_JOYSTICK), RightJoystick(RIGHT_JOYSTICK)
+    LeftJoystick(LEFT_JOYSTICK)
 {
+inline float OI::getLeftDrive()
+{
+  return left.GetY();
 }
+
+inline float OI::getRightDrive()
+{
+  return right.GetY();
+}
+
+}
+

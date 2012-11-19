@@ -1,4 +1,5 @@
 #include "RobotsCommand.h"
+#include <iostream>
 
 //@author Frank
 
@@ -13,8 +14,18 @@ void RobotsCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void RobotsCommand::Execute() {
-    robotSubsystem->Drive(oi->GetRightStick()  *   0.5, oi->GetLeftStick() * -0.5);
-
+    if (left.GetY() > Left.GetX() > 0) {
+    robotSubsystem->Drive(oi->GetLeftStick()  *   1, oi->GetRightStick() * -1);
+}
+    if (left.GetY() > Left.GetX() < 0) {
+    robotSubsystem->Drive(oi->GetLeftStick()  *   1, oi->GetRightStick() * -1);
+}
+    if (left.GetY() < Left.GetX() < 0) {
+    robotSubsystem->Drive(oi->GetLeftStick()  *   1, oi->GetRightStick() * -1);
+}
+    if (left.GetY() < Left.GetX() > 0) {
+    robotSubsystem->Drive(oi->GetLeftStick()  *   1, oi->GetRightStick() * -1);
+}
 }
 
 // Make this return true when this Command no longer needs to run execute()

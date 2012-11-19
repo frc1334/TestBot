@@ -12,7 +12,7 @@ private:
 public:
 	RobotSubsystem();
 	void InitDefaultCommand();
-	void Drive (float LeftJoystick, float RightJoystick);
+	void Drive (float LeftJoystick);
 };
 
 #endif

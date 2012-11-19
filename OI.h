@@ -7,11 +7,9 @@
 
 class OI {
 private:
-    Joystick LeftJoystick,RightJoystick ;
+    Joystick LeftJoystick ;
 public:
 	OI();
-	inline float GetRightStick()
-	{ return RightJoystick.GetY(); }
 	inline float GetLeftStick()
 	{ return LeftJoystick.GetY(); }
 };
