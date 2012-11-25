@@ -13,6 +13,6 @@ public:
   { return left.GetY(); }
   inline float getRightDrive()
   { return right.GetY(); }
- };
+};
 
 #endif

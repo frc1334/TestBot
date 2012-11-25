@@ -6,8 +6,8 @@
 #include "OI.h"
 
 /**
-+ * The base for all commands. All atomic commands should subclass CommandBase.
-+ */
+ * The base for all commands. All atomic commands should subclass CommandBase.
+ */
 class CommandBase : public Command
 {
 public:

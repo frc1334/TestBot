@@ -1,12 +1,12 @@
 #include "DriveTrainSubsystem.h"
 #include "../Robotmap.h"
-#inlcude "../Commands/TankDriveCommand.h"
+#include "../Commands/TankDriveCommand.h"
 
 DriveTrainSubsystem::DriveTrainSubsystem() : Subsystem("DriveTrainSubsystem"),
-    rightMotor(RIGHT_MOTOR), leftMotor(LEFT_MOTOR)
+  rightMotor(RIGHT_MOTOR), leftMotor(LEFT_MOTOR)
 {
 }
-
+    
 void DriveTrainSubsystem::InitDefaultCommand()
 {
   SetDefaultCommand(new TankDriveCommand());
@@ -16,6 +16,6 @@ void DriveTrainSubsystem::InitDefaultCommand()
 // the drive train jaguars
 void DriveTrainSubsystem::Drive(float right, float left)
 {
-        rightMotor.Set(right);
-        leftMotor.Set(left);
+	rightMotor.Set(right);
+	leftMotor.Set(left);
 }

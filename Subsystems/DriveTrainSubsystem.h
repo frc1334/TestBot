@@ -12,7 +12,7 @@
 class DriveTrainSubsystem : public Subsystem
 {
 private:
-    Jaguar rightMotor, leftMotor;
+	Jaguar rightMotor, leftMotor;
 public:
   DriveTrainSubsystem();
   void InitDefaultCommand();

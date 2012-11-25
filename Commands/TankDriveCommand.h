@@ -1,13 +1,13 @@
-+#ifndef TANKDRIVECOMMAND_H
-+#define TANKDRIVECOMMAND_H
-+
+#ifndef TANKDRIVECOMMAND_H
+#define TANKDRIVECOMMAND_H
+
 #include "../CommandBase.h"
 
 /**
-+ * A simple tank drive command
-+ *
-+ * @author josephd
-+ */
+ * A simple tank drive command
+ *
+ * @author josephd
+ */
 class TankDriveCommand : public CommandBase
 {
 public:
