@@ -1,6 +1,7 @@
 #include "OI.h"
+#include "Robotmap.h"
 
-OI::OI() {
-	LeftJoystick(LEFT_JOYSTICK), RightJoystick(Right_Joystick)
-	// Process operator interface input here.
+OI::OI() :
+        left(LEFT_JOYSTICK), right(RIGHT_JOYSTICK)
+{
 }

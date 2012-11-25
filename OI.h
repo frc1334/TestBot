@@ -3,14 +3,16 @@
 
 #include "WPILib.h"
 
-class OI {
+class OI
+{
 private:
- Joystick left, right;
-
+  Joystick left, right;
 public:
-	OI();
-inline float getLeftDrive();
-inline float getRightDrive();
-};
+  OI();
+  inline float getLeftDrive()
+  { return left.GetY(); }
+  inline float getRightDrive()
+  { return right.GetY(); }
+ };
 
 #endif
