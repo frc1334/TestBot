@@ -11,8 +11,11 @@
  
 // For example to map the left and right motors, you could define the
 // following variables to use with your drivetrain subsystem.
- #define LEFTMOTOR 1
- #define RIGHTMOTOR 2
+#define LEFT_MOTOR                    1
+#define RIGHT_MOTOR                   2
+
+#define LEFT_JOYSTICK                 1
+#define RIGHT_JOYSTICK                2
 
 // If you are using multiple modules, make sure to define both the port
 // number and the module. For example you with a rangefinder:
