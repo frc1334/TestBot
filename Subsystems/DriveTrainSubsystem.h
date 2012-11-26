@@ -1,5 +1,5 @@
-#ifndef EXAMPLE_SUBSYSTEM_H
-#define EXAMPLE_SUBSYSTEM_H
+#ifndef DRIVETRAIN_SUBSYSTEM_H
+#define DRIVETRAIN_SUBSYSTEM_H
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
@@ -15,7 +15,7 @@ private:
 Jaguar left;
 Jaguar right;
 public:
-    	ExampleSubsystem();
+    	DriveTrainSubsystem();
 	void InitDefaultCommand();
     void Drive(float left,float right);
 };
