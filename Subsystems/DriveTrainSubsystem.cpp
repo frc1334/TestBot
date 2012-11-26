@@ -1,7 +1,7 @@
 #include "DriveTrainSubsystem.h"
 #include "../Robotmap.h"
 
-DriveTrainSubsystem::DriveTrainSubsystem() : Subsystem("DriveTrainSubsystem") {
+DriveTrainSubsystem::DriveTrainSubsystem() : Subsystem("DriveTrainSubsystem"), left(LEFTMOTOR), right(RIGHTMOTOR) {
 
 }
 
@@ -15,6 +15,6 @@ void DriveTrainSubsystem::InitDefaultCommand() {
 // here. Call these from Commands.
 void DriveTrainSubsystem::Drive(float left, float right)
 {
-    this->left.Set(left)*-1;
+    this->left.Set(left*-1);
     this->right.Set(right);
 }
