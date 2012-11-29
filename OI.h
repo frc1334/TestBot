@@ -10,11 +10,11 @@ public:
 	OI();
 	inline float getLeftDrive()
 	{
-	    return left.getY();
+	    return left.GetY();
 	}
 	inline float getRightDive()
 	{
-	    retun left.getY();
+	    return right.GetY();
 	}
 };
 
