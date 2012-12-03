@@ -9,7 +9,7 @@ CommandBase::CommandBase() : Command() {
 }
 
 // Initialize a single static instance of all of your subsystems to NULL
-TankDriveSubsystem* CommandBase::tankdrivesystem = NULL;
+TankDriveSubsystem* CommandBase::tankdrivesubsystem = NULL;
 OI* CommandBase::oi = NULL;
 
 void CommandBase::init()
