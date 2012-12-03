@@ -12,7 +12,7 @@ public:
 	{
 	    return left.GetY();
 	}
-	inline float getRightDive()
+	inline float getRightDrive()
 	{
 	    return right.GetY();
 	}

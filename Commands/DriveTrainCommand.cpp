@@ -12,7 +12,7 @@ void DriveTrainCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveTrainCommand::Execute() {
-	drivetrainsubsystem->Drive(oi->getRightDrive(),oi->getLeftDrive()*-1);
+	drivetrainsubsystem->Drive(oi->getRightDrive(),oi->getLeftDrive());
 }
 
 // Make this return true when this Command no longer needs to run execute()
