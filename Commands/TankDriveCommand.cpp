@@ -2,7 +2,7 @@
 
 TankDriveCommand::TankDriveCommand()
 {
-  requires(driveTrainSubsystem);
+  Requires(driveTrainSubsystem);
 }
 
 // Called just before this Command runs the first time

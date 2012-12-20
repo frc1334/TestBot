@@ -1,11 +1,11 @@
-#include "ExampleSubsystem.h"
+#include "TankDriveSubsystem.h"
 #include "../Robotmap.h"
 
 TankDriveSubsystem::TankDriveSubsystem() : Subsystem("ExampleSubsystem") {
 	
 }
     
-void ExampleSubsystem::InitDefaultCommand() {
+void TankDriveSubsystem::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	//SetDefaultCommand(new MySpecialCommand());
 }
