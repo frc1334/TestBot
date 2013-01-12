@@ -5,9 +5,12 @@
 
 class OI {
 private:
-
+    Joystick left, right;
 public:
-	OI();
+    OI();
+    inline float GetLeft()
+    { return left.GetY(); }
+    { return right.GetY(); }
 };
 
 #endif

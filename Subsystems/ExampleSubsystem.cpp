@@ -1,16 +1,20 @@
-#include "ExampleSubsystem.h"
-#include "../Robotmap.h"
+#ifndef EXAMPLE_SUBSYSTEM_H
+#define EXAMPLE_SUBSYSTEM_H
+#include "Commands/Subsystem.h"
+#include "WPILib.h"
 
-ExampleSubsystem::ExampleSubsystem() : Subsystem("ExampleSubsystem") {
-	
-}
-    
-void ExampleSubsystem::InitDefaultCommand() {
-	// Set the default command for a subsystem here.
-	//SetDefaultCommand(new MySpecialCommand());
-}
+/**
+ *
+ *
+ * @author ExampleAuthor
+ */
+class ExampleSubsystem: public Subsystem {
+private:
+	// It's desirable that everything possible under private except
+	// for methods that implement subsystem capabilities
+public:
+	ExampleSubsystem();
+	void InitDefaultCommand();
+};
 
-
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
-
+#endif
