@@ -8,15 +8,19 @@
  */
 class RobotDemo : public SimpleRobot
 {
-	Jaguar left;
-	Jaguar right;
+	Jaguar left1;
+	Jaguat left2;
+	Jaguar right1;
+	Jaguar right2;
 	Joystick leftStick;
 	Joystick rightStick;
 
 public:
 	RobotDemo(void):
-		left(1),
-		right(2),
+		left1(2),
+		left2(3),
+		right1(9),
+		right2(10),
 		leftStick(1),
 		rightStick(2)
 	{
@@ -34,8 +38,10 @@ public:
 	 */
 	void OperatorControl(void)
 	{
-        left.Set(leftStick.GetY());
-        right.Set(rightStick.GetY());
+        left1.Set(leftStick.GetY());
+        left2.Set(leftStick.GetY());
+        right1.Set(rightStick.GetY());
+        right2.Set(rightStick.GetY());
 	}
 
 	/**
