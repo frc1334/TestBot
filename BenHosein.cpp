@@ -17,7 +17,7 @@ public:
 		left(1),
 		right (2),
 		leftstick (1),
-		righgtstick (2)
+		rightstick (2)
 	{
 	}
 

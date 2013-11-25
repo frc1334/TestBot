@@ -17,10 +17,10 @@ public:
 	RobotDemo(void):
 		left (1),
 		right (2),
-		leftstick(1),
-		rightstick (2)
+		leftStick(1),
+		rightStick (2)
 	{
-		myRobot.SetExpiration(0.1);
+		//myRobot.SetExpiration(0.1);
 	}
 
 	/**

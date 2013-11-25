@@ -9,16 +9,16 @@
 class RobotDemo : public SimpleRobot
 {
 	Jaguar left;
-	Jaguar Right;
-	Joystick leftstick;
+	Jaguar right;
+	Joystick leftStick;
 	Joystick rightStick;
 
 public:
 	RobotDemo(void):
         left(1),
         right(2),
-		leftstick(1),
-		rightstick(2)
+		leftStick(1),
+		rightStick(2)
 	{
 	}
 
@@ -27,10 +27,10 @@ public:
 	 */
 	void Autonomous(void)
 	{
-		myRobot.SetSafetyEnabled(false);
-		myRobot.Drive(-0.5, 0.0); 	// drive forwards half speed
+		//myRobot.SetSafetyEnabled(false);
+		//myRobot.Drive(-0.5, 0.0); 	// drive forwards half speed
 		Wait(2.0); 				//    for 2 seconds
-		myRobot.Drive(0.0, 0.0); 	// stop robot
+		//myRobot.Drive(0.0, 0.0); 	// stop robot
 	}
 
 	/**

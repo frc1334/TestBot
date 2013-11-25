@@ -10,7 +10,6 @@ class RobotDemo : public SimpleRobot
 {
 	Jaguar left;
 	Jaguar right;
->>>>>>> Removed autonomous code
 	Joystick leftStick;
 	Joystick rightStick;
 

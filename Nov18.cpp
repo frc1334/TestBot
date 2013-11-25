@@ -17,10 +17,10 @@ public:
 	RobotDemo(void):
 		left(1),
 		right(2),
-		leftstick(1),
-		rightstick(2)
+		leftStick(1),
+		rightStick(2)
 	{
-		myRobot.SetExpiration(0.1);
+		//myRobot.SetExpiration(0.1);
 	}
 
 	/**
@@ -28,10 +28,10 @@ public:
 	 */
 	void Autonomous(void)
 	{
-		myRobot.SetSafetyEnabled(false);
-		myRobot.Drive(-0.5, 0.0); 	// drive forwards half speed
+		//myRobot.SetSafetyEnabled(false);
+		//myRobot.Drive(-0.5, 0.0); 	// drive forwards half speed
 		Wait(2.0); 				//    for 2 seconds
-		myRobot.Drive(0.0, 0.0); 	// stop robot
+		//myRobot.Drive(0.0, 0.0); 	// stop robot
 	}
 
 	/**
