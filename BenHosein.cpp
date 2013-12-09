@@ -39,10 +39,10 @@ public:
 	{
         while (IsEnabled())
 	    {
-        left1.Set (-(leftstick.GetY() - leftstick.Getx()));
-        left2.Set (-(leftstick.GetY() - leftstick.Getx()));
-        right1.Set (rightstick.GetY() + leftstick.Getx());
-        right2.Set (rightstick.GetY() + leftstick.Getx());
+        left1.Set (-(leftstick.GetY() - leftstick.GetX()));
+        left2.Set (-(leftstick.GetY() - leftstick.GetX()));
+        right1.Set (rightstick.GetY() + leftstick.GetX());
+        right2.Set (rightstick.GetY() + leftstick.GetX());
         }
 	}
 
