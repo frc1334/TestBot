@@ -41,8 +41,8 @@ public:
 	    {
         left1.Set (-(leftstick.GetY() - leftstick.GetX()));
         left2.Set (-(leftstick.GetY() - leftstick.GetX()));
-        right1.Set (rightstick.GetY() + leftstick.GetX());
-        right2.Set (rightstick.GetY() + leftstick.GetX());
+        right1.Set (leftstick.GetY() + leftstick.GetX());
+        right2.Set (leftstick.GetY() + leftstick.GetX());
         }
 	}
 
