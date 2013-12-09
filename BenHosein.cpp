@@ -37,10 +37,13 @@ public:
 	 */
 	void OperatorControl(void)
 	{
-        left1.Set (leftstick.GetY());
-        left2.Set (leftstick.GetY());
-        right1.Set (rightstick.GetY());
-        right2.Set (rightstick.GetY());
+        while (IsEnabled())
+	    {
+        left1.Set (-(leftstick.GetY() - leftstick.Getx()));
+        left2.Set (-(leftstick.GetY() - leftstick.Getx()));
+        right1.Set (rightstick.GetY() + leftstick.Getx());
+        right2.Set (rightstick.GetY() + leftstick.Getx());
+        }
 	}
 
 	/**
