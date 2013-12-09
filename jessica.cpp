@@ -9,7 +9,7 @@
 class RobotDemo : public SimpleRobot
 {
 	Jaguar left1;
-	Jaguat left2;
+	Jaguar left2;
 	Jaguar right1;
 	Jaguar right2;
 	Joystick leftStick;
@@ -40,10 +40,10 @@ public:
 	{
 	    while (IsEnabled())
 	    {
-	        left1.Set(-(leftStick.GetY() - leftStick.GetY()));
-            left2.Set(-(leftStick.GetY() - leftStick.GetY()));
-            right1.Set(-(leftStick.GetY() + leftStick.GetY()));
-            right2.Set(-(leftStick.GetY() + leftStick.GetY()));
+	        left1.Set(-(leftStick.GetY() - leftStick.GetX()));
+            left2.Set(-(leftStick.GetY() - leftStick.GetX()));
+            right1.Set(leftStick.GetY() + leftStick.GetX());
+            right2.Set(leftStick.GetY() + leftStick.GetX());
 	    }
 	}
 
