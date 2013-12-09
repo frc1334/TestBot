@@ -36,13 +36,16 @@ public:
 	/**
 	 * Runs the motors with arcade steering.
 	 */
-	void OperatorControl(void)
-	{
-		left.Set(leftStick.GetY());
-		right.Set(rightStick.GetY());
-
-
-		}
+     void OperatorControl(void)
+     {
+         while (IsEnabled())
+         {
+             left1.Set(-(leftStick.GetY() - leftStick.GetX()));
+             left2.Set(-(leftStick.GetY() - leftStick.GetX()));
+             right1.Set(-(rightStick.GetY() - rightStick.GetX()));
+             right2.Set(-(rightStick.GetY() - rightStick.GetX()));
+         }
+     }
 
 
 	/**
