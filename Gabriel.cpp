@@ -18,7 +18,7 @@ public:
 		//added constructors for the stuff above :P
 		motortest(1),
 		stick(1),
-		twistytwistything(1),
+		twistytwistything(1)
 		
 	{
 	}
@@ -38,7 +38,7 @@ public:
         while (IsEnabled())
 	    {
 			//gets voltage from TTT and puts it into the motor test (Scales before hand)
-			float controlv = control.GetVoltage();
+			float controlv = twistytwistything.GetVoltage();
 			motortest.Set(controlv/5);
         }
 	}
