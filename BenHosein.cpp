@@ -8,20 +8,14 @@
  */
 class RobotDemo : public SimpleRobot
 {
-	Jaguar left1;
-	Jaguar left2;
-	Jaguar right1;
-	Jaguar right2;
-	Joystick leftstick;
-	Joystick rightstick;
+	Jaguar motor;
+	Joystick stick;
+	AnalogChannel control; //sets a speed to the motor
 public:
 	RobotDemo(void):
-		left1(2),
-		left2(3),
-		right1(9),
-		right2(10),
-		leftstick (1),
-		rightstick (2)
+		motor(1),
+		stick (1),
+		control (1) //defining where to find the port on the sidecar
 	{
 	}
 
@@ -38,12 +32,10 @@ public:
 	void OperatorControl(void)
 	{
         while (IsEnabled())
-	    {
-        left1.Set (-(leftstick.GetY() - leftstick.GetX()));
-        left2.Set (-(leftstick.GetY() - leftstick.GetX()));
-        right1.Set (leftstick.GetY() + leftstick.GetX());
-        right2.Set (leftstick.GetY() + leftstick.GetX());
-        }
+		{
+			float controlv = control.GetVoltage();
+			motor.Set(controlv/5); //get's voltage from control and divides it by 5
+		}
 	}
 
 	/**
