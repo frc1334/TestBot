@@ -8,17 +8,17 @@
  */
 class RobotDemo : public SimpleRobot
 {
-	Jaguar left;
-	Jaguar right;
-	Joystick leftStick;
-	Joystick rightStick;
+	Jaguar motortest;
+	Joystick stick;
+	AnalogChannel twistytwistything;
 
 public:
 	RobotDemo(void):
-		left(1),
-		right(2),
-		leftStick(1),
-		rightStick(2)
+		
+		motortest(1),
+		stick(1),
+		twistytwistything(1),
+		
 	{
 	}
 
@@ -34,8 +34,11 @@ public:
 	 */
 	void OperatorControl(void)
 	{
-        left.Set(leftStick.GetY());
-        right.Set(rightStick.GetY());
+        while (IsEnabled())
+	    {
+			float controlv = control.GetVoltage();
+			motortest.Set(controlv/5);
+        }
 	}
 
 	/**
@@ -45,6 +48,7 @@ public:
 
 	}
 };
+    
 
 START_ROBOT_CLASS(RobotDemo);
 
