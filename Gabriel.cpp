@@ -8,13 +8,14 @@
  */
 class RobotDemo : public SimpleRobot
 {
+	//deffines variable:Motor (Jaguar), Joystick (stick), and AnalogChannel(TTT)
 	Jaguar motortest;
 	Joystick stick;
 	AnalogChannel twistytwistything;
 
 public:
 	RobotDemo(void):
-		
+		//added constructors for the stuff above :P
 		motortest(1),
 		stick(1),
 		twistytwistything(1),
@@ -36,6 +37,7 @@ public:
 	{
         while (IsEnabled())
 	    {
+			//gets voltage from TTT and puts it into the motor test (Scales before hand)
 			float controlv = control.GetVoltage();
 			motortest.Set(controlv/5);
         }
