@@ -39,6 +39,7 @@ public:
 	 */
 	void OperatorControl(void)
 	{
+		blackboringthing.Start();
         while (IsEnabled())
 	    {
 			//gets voltage from TTT and puts it into the motor test (Scales before hand)
