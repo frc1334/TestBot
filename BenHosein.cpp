@@ -11,11 +11,13 @@ class RobotDemo : public SimpleRobot
 	Jaguar motor;
 	Joystick stick;
 	AnalogChannel control; //sets a speed to the motor
+	Encoder;
 public:
 	RobotDemo(void):
 		motor(1),
 		stick (1),
-		control (1) //defining where to find the port on the sidecar
+		control (1), //defining where to find the port on the sidecar
+		Encoder(10,11)
 	{
 	}
 
@@ -35,6 +37,10 @@ public:
 		{
 			float controlv = control.GetVoltage();
 			motor.Set(controlv/5); //get's voltage from control and divides it by 5
+			double rate = Encoder.GetRate();
+			double distance = Encoder.GetDistance();
+			printf ("%f %F \n", rate, distance);
+
 		}
 	}
 
