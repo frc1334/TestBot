@@ -21,7 +21,7 @@ public:
 		//added constructors for the stuff above :P
 		motortest(1),
 		stick(1),
-		twistytwistything(1)
+		twistytwistything(1),
 		blackboringthing (10,11)
 		
 	{
@@ -46,7 +46,7 @@ public:
 			motortest.Set(controlv/5);
 			double Rate=blackboringthing.GetRate();
 			double Distance=blackboringthing.GetDistance();
-			printf ("The input: Rate Distance %F", Rate, Distance);
+			printf ("The input: Rate Distance %F %F", Rate, Distance);
 
         }
 	}
