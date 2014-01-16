@@ -12,6 +12,9 @@ class RobotDemo : public SimpleRobot
 	Jaguar motortest;
 	Joystick stick;
 	AnalogChannel twistytwistything;
+	Encoder blackboringthing;
+
+
 
 public:
 	RobotDemo(void):
@@ -19,6 +22,7 @@ public:
 		motortest(1),
 		stick(1),
 		twistytwistything(1)
+		blackboringthing (10,11)
 		
 	{
 	}
@@ -40,6 +44,10 @@ public:
 			//gets voltage from TTT and puts it into the motor test (Scales before hand)
 			float controlv = twistytwistything.GetVoltage();
 			motortest.Set(controlv/5);
+			double Rate=blackboringthing.GetRate();
+			double Distance=blackboringthing.GetDistance();
+			printf ("The input: Rate Distance %F", Rate, Distance);
+
         }
 	}
 
