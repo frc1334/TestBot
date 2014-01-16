@@ -39,7 +39,7 @@ public:
 			motor.Set(controlv/5); //get's voltage from control and divides it by 5
 			double rate = Encoder.GetRate();
 			double distance = Encoder.GetDistance();
-			printf ("%f %F \n", rate, distance);
+			printf ("%f %f \n", rate, distance);
 
 		}
 	}
