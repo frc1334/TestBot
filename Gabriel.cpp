@@ -46,7 +46,7 @@ public:
 			motortest.Set(controlv/5);
 			double Rate=blackboringthing.GetRate();
 			double Distance=blackboringthing.GetDistance();
-			printf ("The input: Rate Distance %F %F", Rate, Distance);
+			printf ("The input: Rate Distance %f %f \n", Rate, Distance);
 
         }
 	}
